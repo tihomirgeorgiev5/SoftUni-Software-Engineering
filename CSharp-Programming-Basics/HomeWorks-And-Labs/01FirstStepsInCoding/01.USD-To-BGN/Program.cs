@@ -6,8 +6,12 @@ namespace USDKumBGN
     {
         static void Main(string[] args)
         {
-            double test = 1.3455656;
-            Console.WriteLine(Math.Round(test,2));
+            //прочитаме входа
+            double input = double.Parse(Console.ReadLine());
+            //изчисляваме курса
+            double result = input * 1.79549;
+            //принтираме резултата
+            Console.WriteLine(result);
 
         }
     }
