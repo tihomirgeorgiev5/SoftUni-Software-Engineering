@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 
 namespace Exercise
 {
@@ -13,6 +14,13 @@ namespace Exercise
             foreach (var type in interfaces)
             {
                 Console.WriteLine(type.Name);
+            }
+
+            MethodInfo[] methods = studentType.GetMethods();
+
+            foreach (var method in methods)
+            {
+                Console.WriteLine(method.Name);
             }
         }
     }
