@@ -8,6 +8,8 @@ namespace ReflectingConstructors
         static void Main(string[] args)
         {
             Type type = typeof(Student);
+
+            ConstructorInfo concreteConstructor = type.GetConstructor(new Type[] { typeof(String), typeof(int) });
             ConstructorInfo[] constructors = type.GetConstructors();
 
             foreach (var constructor in constructors)
@@ -15,6 +17,7 @@ namespace ReflectingConstructors
                 
                 Console.WriteLine(constructor);
             }
+            Console.WriteLine(concreteConstructor);
         }
     }
 }
