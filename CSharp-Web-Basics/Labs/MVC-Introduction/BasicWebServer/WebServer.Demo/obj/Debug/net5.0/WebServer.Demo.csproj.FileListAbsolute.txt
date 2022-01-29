@@ -1,0 +1,5 @@
+C:\Users\Notebook\source\repos\WebServer\WebServer.Demo\obj\Debug\net5.0\WebServer.Demo.csproj.AssemblyReference.cache
+C:\Users\Notebook\source\repos\WebServer\WebServer.Demo\obj\Debug\net5.0\WebServer.Demo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Notebook\source\repos\WebServer\WebServer.Demo\obj\Debug\net5.0\WebServer.Demo.AssemblyInfoInputs.cache
+C:\Users\Notebook\source\repos\WebServer\WebServer.Demo\obj\Debug\net5.0\WebServer.Demo.AssemblyInfo.cs
+C:\Users\Notebook\source\repos\WebServer\WebServer.Demo\obj\Debug\net5.0\WebServer.Demo.csproj.CoreCompileInputs.cache

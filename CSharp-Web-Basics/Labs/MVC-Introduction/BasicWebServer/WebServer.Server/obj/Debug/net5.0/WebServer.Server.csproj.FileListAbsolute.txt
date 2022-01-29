@@ -1,0 +1,16 @@
+C:\Users\Notebook\source\repos\WebServer\WebServer.Server\obj\Debug\net5.0\WebServer.Server.csproj.AssemblyReference.cache
+C:\Users\Notebook\source\repos\WebServer\WebServer.Server\obj\Debug\net5.0\WebServer.Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Notebook\source\repos\WebServer\WebServer.Server\obj\Debug\net5.0\WebServer.Server.AssemblyInfoInputs.cache
+C:\Users\Notebook\source\repos\WebServer\WebServer.Server\obj\Debug\net5.0\WebServer.Server.AssemblyInfo.cs
+C:\Users\Notebook\source\repos\WebServer\WebServer.Server\obj\Debug\net5.0\WebServer.Server.csproj.CoreCompileInputs.cache
+C:\Users\Notebook\source\repos\WebServer\WebServer.Server\bin\Debug\net5.0\WebServer.Server.exe
+C:\Users\Notebook\source\repos\WebServer\WebServer.Server\bin\Debug\net5.0\WebServer.Server.deps.json
+C:\Users\Notebook\source\repos\WebServer\WebServer.Server\bin\Debug\net5.0\WebServer.Server.runtimeconfig.json
+C:\Users\Notebook\source\repos\WebServer\WebServer.Server\bin\Debug\net5.0\WebServer.Server.runtimeconfig.dev.json
+C:\Users\Notebook\source\repos\WebServer\WebServer.Server\bin\Debug\net5.0\WebServer.Server.dll
+C:\Users\Notebook\source\repos\WebServer\WebServer.Server\bin\Debug\net5.0\ref\WebServer.Server.dll
+C:\Users\Notebook\source\repos\WebServer\WebServer.Server\bin\Debug\net5.0\WebServer.Server.pdb
+C:\Users\Notebook\source\repos\WebServer\WebServer.Server\obj\Debug\net5.0\WebServer.Server.dll
+C:\Users\Notebook\source\repos\WebServer\WebServer.Server\obj\Debug\net5.0\ref\WebServer.Server.dll
+C:\Users\Notebook\source\repos\WebServer\WebServer.Server\obj\Debug\net5.0\WebServer.Server.pdb
+C:\Users\Notebook\source\repos\WebServer\WebServer.Server\obj\Debug\net5.0\WebServer.Server.genruntimeconfig.cache
