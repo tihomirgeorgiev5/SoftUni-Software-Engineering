@@ -1,0 +1,13 @@
+C:\Users\Notebook\Desktop\SoftUni\SoftUni-Software-Engineering\CSharp-Web-Basics\Exams\ExamPrep\Andrey's\SIS.MvcFramework\bin\Debug\netstandard2.0\SIS.MvcFramework.deps.json
+C:\Users\Notebook\Desktop\SoftUni\SoftUni-Software-Engineering\CSharp-Web-Basics\Exams\ExamPrep\Andrey's\SIS.MvcFramework\bin\Debug\netstandard2.0\SIS.MvcFramework.dll
+C:\Users\Notebook\Desktop\SoftUni\SoftUni-Software-Engineering\CSharp-Web-Basics\Exams\ExamPrep\Andrey's\SIS.MvcFramework\bin\Debug\netstandard2.0\SIS.MvcFramework.pdb
+C:\Users\Notebook\Desktop\SoftUni\SoftUni-Software-Engineering\CSharp-Web-Basics\Exams\ExamPrep\Andrey's\SIS.MvcFramework\bin\Debug\netstandard2.0\SIS.HTTP.dll
+C:\Users\Notebook\Desktop\SoftUni\SoftUni-Software-Engineering\CSharp-Web-Basics\Exams\ExamPrep\Andrey's\SIS.MvcFramework\bin\Debug\netstandard2.0\SIS.HTTP.pdb
+C:\Users\Notebook\Desktop\SoftUni\SoftUni-Software-Engineering\CSharp-Web-Basics\Exams\ExamPrep\Andrey's\SIS.MvcFramework\obj\Debug\netstandard2.0\SIS.MvcFramework.csproj.AssemblyReference.cache
+C:\Users\Notebook\Desktop\SoftUni\SoftUni-Software-Engineering\CSharp-Web-Basics\Exams\ExamPrep\Andrey's\SIS.MvcFramework\obj\Debug\netstandard2.0\SIS.MvcFramework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Notebook\Desktop\SoftUni\SoftUni-Software-Engineering\CSharp-Web-Basics\Exams\ExamPrep\Andrey's\SIS.MvcFramework\obj\Debug\netstandard2.0\SIS.MvcFramework.AssemblyInfoInputs.cache
+C:\Users\Notebook\Desktop\SoftUni\SoftUni-Software-Engineering\CSharp-Web-Basics\Exams\ExamPrep\Andrey's\SIS.MvcFramework\obj\Debug\netstandard2.0\SIS.MvcFramework.AssemblyInfo.cs
+C:\Users\Notebook\Desktop\SoftUni\SoftUni-Software-Engineering\CSharp-Web-Basics\Exams\ExamPrep\Andrey's\SIS.MvcFramework\obj\Debug\netstandard2.0\SIS.MvcFramework.csproj.CoreCompileInputs.cache
+C:\Users\Notebook\Desktop\SoftUni\SoftUni-Software-Engineering\CSharp-Web-Basics\Exams\ExamPrep\Andrey's\SIS.MvcFramework\obj\Debug\netstandard2.0\SIS.MvcFramework.csproj.CopyComplete
+C:\Users\Notebook\Desktop\SoftUni\SoftUni-Software-Engineering\CSharp-Web-Basics\Exams\ExamPrep\Andrey's\SIS.MvcFramework\obj\Debug\netstandard2.0\SIS.MvcFramework.dll
+C:\Users\Notebook\Desktop\SoftUni\SoftUni-Software-Engineering\CSharp-Web-Basics\Exams\ExamPrep\Andrey's\SIS.MvcFramework\obj\Debug\netstandard2.0\SIS.MvcFramework.pdb

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "2+OPvw8yrPJF8w6F2o/hzD8aMXKBGE3uuBSa3QIAJdFImKUbOe2woS6SC3bA0Qowf2NLAhk5NeqTvnPZdWKIIw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Notebook\\Desktop\\SoftUni\\SoftUni-Software-Engineering\\CSharp-Web-Basics\\Exams\\ExamPrep\\Andrey's\\SIS.HTTP\\SIS.HTTP.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Notebook\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Notebook\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
