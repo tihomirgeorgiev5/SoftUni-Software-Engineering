@@ -7,6 +7,10 @@ namespace Panda.Data.Models
 {
     public class Package
     {
+        public Package()
+        {
+            this.Id = Guid.NewGuid().ToString();
+        }
         public string Id { get; set; }
 
         [Required]
