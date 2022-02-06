@@ -27,7 +27,11 @@
         "frameworks": {
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Notebook\\Desktop\\SoftUni\\SoftUni-Software-Engineering\\CSharp-Web-Basics\\Exams\\ExamPrep\\Panda\\src\\SIS.MvcFramework\\SIS.MvcFramework.csproj": {
+                "projectPath": "C:\\Users\\Notebook\\Desktop\\SoftUni\\SoftUni-Software-Engineering\\CSharp-Web-Basics\\Exams\\ExamPrep\\Panda\\src\\SIS.MvcFramework\\SIS.MvcFramework.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -140,15 +144,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.2"
+          "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.2": {
-            "targetAlias": "netcoreapp2.2",
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {
               "C:\\Users\\Notebook\\Desktop\\SoftUni\\SoftUni-Software-Engineering\\CSharp-Web-Basics\\Exams\\ExamPrep\\Panda\\src\\Apps\\Panda\\Panda.Data\\Panda.Data.csproj": {
                 "projectPath": "C:\\Users\\Notebook\\Desktop\\SoftUni\\SoftUni-Software-Engineering\\CSharp-Web-Basics\\Exams\\ExamPrep\\Panda\\src\\Apps\\Panda\\Panda.Data\\Panda.Data.csproj"
@@ -169,16 +173,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.2": {
-          "targetAlias": "netcoreapp2.2",
-          "dependencies": {
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )",
-              "autoReferenced": true
-            }
-          },
+        "net5.0": {
+          "targetAlias": "net5.0",
           "imports": [
             "net461",
             "net462",
@@ -189,6 +185,11 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
