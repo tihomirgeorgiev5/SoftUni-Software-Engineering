@@ -1,0 +1,5 @@
+C:\Users\Notebook\Desktop\SoftUni\SoftUni-Software-Engineering\CSharp-Web-Basics\Exams\ExamPrep\Panda\src\SIS.MvcFramework\obj\Debug\netstandard2.0\SIS.MvcFramework.csproj.AssemblyReference.cache
+C:\Users\Notebook\Desktop\SoftUni\SoftUni-Software-Engineering\CSharp-Web-Basics\Exams\ExamPrep\Panda\src\SIS.MvcFramework\obj\Debug\netstandard2.0\SIS.MvcFramework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Notebook\Desktop\SoftUni\SoftUni-Software-Engineering\CSharp-Web-Basics\Exams\ExamPrep\Panda\src\SIS.MvcFramework\obj\Debug\netstandard2.0\SIS.MvcFramework.AssemblyInfoInputs.cache
+C:\Users\Notebook\Desktop\SoftUni\SoftUni-Software-Engineering\CSharp-Web-Basics\Exams\ExamPrep\Panda\src\SIS.MvcFramework\obj\Debug\netstandard2.0\SIS.MvcFramework.AssemblyInfo.cs
+C:\Users\Notebook\Desktop\SoftUni\SoftUni-Software-Engineering\CSharp-Web-Basics\Exams\ExamPrep\Panda\src\SIS.MvcFramework\obj\Debug\netstandard2.0\SIS.MvcFramework.csproj.CoreCompileInputs.cache

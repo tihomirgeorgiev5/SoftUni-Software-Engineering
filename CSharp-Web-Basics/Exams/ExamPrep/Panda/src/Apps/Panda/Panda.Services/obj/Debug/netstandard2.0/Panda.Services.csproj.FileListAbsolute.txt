@@ -1,0 +1,5 @@
+C:\Users\Notebook\Desktop\SoftUni\SoftUni-Software-Engineering\CSharp-Web-Basics\Exams\ExamPrep\Panda\src\Apps\Panda\Panda.Services\obj\Debug\netstandard2.0\Panda.Services.csproj.AssemblyReference.cache
+C:\Users\Notebook\Desktop\SoftUni\SoftUni-Software-Engineering\CSharp-Web-Basics\Exams\ExamPrep\Panda\src\Apps\Panda\Panda.Services\obj\Debug\netstandard2.0\Panda.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Notebook\Desktop\SoftUni\SoftUni-Software-Engineering\CSharp-Web-Basics\Exams\ExamPrep\Panda\src\Apps\Panda\Panda.Services\obj\Debug\netstandard2.0\Panda.Services.AssemblyInfoInputs.cache
+C:\Users\Notebook\Desktop\SoftUni\SoftUni-Software-Engineering\CSharp-Web-Basics\Exams\ExamPrep\Panda\src\Apps\Panda\Panda.Services\obj\Debug\netstandard2.0\Panda.Services.AssemblyInfo.cs
+C:\Users\Notebook\Desktop\SoftUni\SoftUni-Software-Engineering\CSharp-Web-Basics\Exams\ExamPrep\Panda\src\Apps\Panda\Panda.Services\obj\Debug\netstandard2.0\Panda.Services.csproj.CoreCompileInputs.cache
