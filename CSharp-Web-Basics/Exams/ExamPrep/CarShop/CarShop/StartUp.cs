@@ -14,9 +14,9 @@
                     .MapStaticFiles()
                     .MapControllers())
                 .WithServices(services => services
-                .Add<ApplicationDbContext>()
+                .Add<CarShopDbContext>()
                 .Add<IViewEngine, CompilationViewEngine>())
-                .WithConfiguration<ApplicationDbContext>(context => context
+                .WithConfiguration<CarShopDbContext>(context => context
                     .Database.Migrate())
                 .Start();
     }

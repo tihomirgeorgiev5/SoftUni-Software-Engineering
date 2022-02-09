@@ -15,9 +15,10 @@ namespace CarShop.Data
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer(@"Server=DESKTOP-SB9MJ7T\SQLEXPRESS;Database=CarShop;Integrated Security=True;");
+                optionsBuilder.UseSqlServer(@"Server=DESKTOP-SB9MJ7T\SQLEXPRESS;Database=CarShop;Trusted_Connection=True");
             }
-            
+            base.OnConfiguring(optionsBuilder);
+
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
