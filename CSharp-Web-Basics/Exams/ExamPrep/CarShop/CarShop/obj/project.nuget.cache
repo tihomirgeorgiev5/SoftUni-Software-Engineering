@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "M2pdIziJhuGvk4cGAGJ1VTW0YYI4JxJbTNYhJou8dBMcyxYYj2AsCn61/NhjZZew0B+FtTggmazv58F8virNPQ==",
+  "dgSpecHash": "X2YF5YzZFscExwXm/hqiXai83R4QQmbm4eUZ4xSMPJAb2chTxkSjpWao5wF2gXtWB8t2QYJzYyDvyrAvk0VvPg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Notebook\\Desktop\\SoftUni\\SoftUni-Software-Engineering\\CSharp-Web-Basics\\Exams\\ExamPrep\\CarShop\\CarShop\\CarShop.csproj",
   "expectedPackageFiles": [
@@ -14,10 +14,10 @@
     "C:\\Users\\Notebook\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.13\\microsoft.entityframeworkcore.5.0.13.nupkg.sha512",
     "C:\\Users\\Notebook\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.13\\microsoft.entityframeworkcore.abstractions.5.0.13.nupkg.sha512",
     "C:\\Users\\Notebook\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.13\\microsoft.entityframeworkcore.analyzers.5.0.13.nupkg.sha512",
-    "C:\\Users\\Notebook\\.nuget\\packages\\microsoft.entityframeworkcore.design\\5.0.13\\microsoft.entityframeworkcore.design.5.0.13.nupkg.sha512",
-    "C:\\Users\\Notebook\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.13\\microsoft.entityframeworkcore.relational.5.0.13.nupkg.sha512",
-    "C:\\Users\\Notebook\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.13\\microsoft.entityframeworkcore.sqlserver.5.0.13.nupkg.sha512",
-    "C:\\Users\\Notebook\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\5.0.13\\microsoft.entityframeworkcore.tools.5.0.13.nupkg.sha512",
+    "C:\\Users\\Notebook\\.nuget\\packages\\microsoft.entityframeworkcore.design\\5.0.0\\microsoft.entityframeworkcore.design.5.0.0.nupkg.sha512",
+    "C:\\Users\\Notebook\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.0\\microsoft.entityframeworkcore.relational.5.0.0.nupkg.sha512",
+    "C:\\Users\\Notebook\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.0\\microsoft.entityframeworkcore.sqlserver.5.0.0.nupkg.sha512",
+    "C:\\Users\\Notebook\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\5.0.0\\microsoft.entityframeworkcore.tools.5.0.0.nupkg.sha512",
     "C:\\Users\\Notebook\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Notebook\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
     "C:\\Users\\Notebook\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
