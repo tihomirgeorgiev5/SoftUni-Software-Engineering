@@ -13,11 +13,16 @@ namespace CarShop.Controllers
     public class UsersController : Controller
     {
         private readonly IValidator validator;
+        private readonly IPasswordHasher passwordHasher;
         private readonly CarShopDbContext data;
 
-        public UsersController(IValidator validator)
+        public UsersController(
+            IValidator validator,
+            IPasswordHasher passwordHasher,
+            CarShopDbContext data)
         {
             this.validator = validator;
+            this.passwordHasher = passwordHasher;
             this.data = data;
         }
         public HttpResponse Register() => View();
@@ -45,7 +50,7 @@ namespace CarShop.Controllers
             var user = new User
             {
                 Username = model.Username,
-                Password = null,
+                Password = this.passwordHasher.HashPassword(model.Password),
                 Email = model.Email,
                 IsMechanic = model.UserType == UserTypeMechanic,
 
