@@ -86,5 +86,11 @@ namespace CarShop.Controllers
             return Redirect("/Cars/All");
 
         }
+        public HttpResponse Logout()
+        {
+            this.SignOut();
+
+            return Redirect("/");
+        }
     }
 }
