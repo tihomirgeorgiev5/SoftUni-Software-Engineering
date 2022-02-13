@@ -1,11 +1,10 @@
 ﻿using CarShop.Models.Users;
-using System.Text.RegularExpressions;
-using static CarShop.Data.DataConstants;
+using System.Collections.Generic;
 namespace CarShop.Services
 {
     public interface IValidator
     {
-        bool ValidateUserRegistration(RegisterUserFormModel model)
+        IEnumerable<string> ValidateUserRegistration(RegisterUserFormModel model);
         
 
     }

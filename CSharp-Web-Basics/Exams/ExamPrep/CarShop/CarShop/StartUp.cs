@@ -6,6 +6,8 @@
     using MyWebServer.Controllers;
     using MyWebServer.Results.Views;
     using Microsoft.EntityFrameworkCore;
+    using CarShop.Services;
+
     public class Startup
     {
         public static async Task Main()
@@ -15,6 +17,7 @@
                     .MapControllers())
                 .WithServices(services => services
                 .Add<IViewEngine, CompilationViewEngine>()
+                .Add<IValidator, Validator>()
                 .Add<CarShopDbContext>())
                 .WithConfiguration<CarShopDbContext>(context => context
                     .Database.Migrate())

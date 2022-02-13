@@ -30,7 +30,7 @@ namespace CarShop.Data.Models
         public string PictureUrl { get; set; }
 
         [Required]
-        [MaxLength(PlateNumberMaxLength)]
+        [MaxLength(CarPlateNumberMaxLength)]
         public string PlateNumber { get; set; }
 
         [Required]
