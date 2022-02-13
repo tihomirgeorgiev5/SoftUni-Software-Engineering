@@ -7,7 +7,7 @@ namespace CarShop.Services
 {
     public class Validator : IValidator
     {
-        public IEnumerable<string> ValidateUserRegistration(RegisterUserFormModel model)
+        public ICollection<string> ValidateUserRegistration(RegisterUserFormModel model)
         {
             var errors = new List<string>();
             if (model.Username.Length < UserMinUsername || model.Username.Length > DefaultMaxLength)

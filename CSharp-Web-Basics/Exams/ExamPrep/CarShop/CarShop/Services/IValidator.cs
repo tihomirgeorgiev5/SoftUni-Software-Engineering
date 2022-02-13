@@ -4,7 +4,7 @@ namespace CarShop.Services
 {
     public interface IValidator
     {
-        IEnumerable<string> ValidateUserRegistration(RegisterUserFormModel model);
+        ICollection<string> ValidateUserRegistration(RegisterUserFormModel model);
         
 
     }
