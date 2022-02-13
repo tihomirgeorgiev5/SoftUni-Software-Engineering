@@ -82,8 +82,7 @@ namespace CarShop.Data.Migrations
                     b.Property<bool>("IsMechanic");
 
                     b.Property<string>("Password")
-                        .IsRequired()
-                        .HasMaxLength(20);
+                        .IsRequired();
 
                     b.Property<string>("Username")
                         .IsRequired()

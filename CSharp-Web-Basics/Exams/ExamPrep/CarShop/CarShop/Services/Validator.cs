@@ -15,7 +15,7 @@ namespace CarShop.Services
                 errors.Add($"Username must be between {UserMinUsername} and {DefaultMaxLength} characters long: {model.Username}");
             }
 
-            if (!Regex.IsMatch(model.Email, @"\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*"))
+            if (!Regex.IsMatch(model.Email, @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$"))
             {
                 errors.Add($"Email {model.Email} is not a valid e-mail address");
             }

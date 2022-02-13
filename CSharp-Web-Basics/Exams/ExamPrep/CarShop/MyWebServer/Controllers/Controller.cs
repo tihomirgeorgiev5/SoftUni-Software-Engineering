@@ -86,6 +86,9 @@
         protected ActionResult View(object model, [CallerMemberName] string viewName = "")
             => this.GetViewResult(viewName, model);
 
+        protected ActionResult Error(string error)
+            => this.Error(new[] { error });
+
         
 
         protected ActionResult Error(IEnumerable<string> errors)

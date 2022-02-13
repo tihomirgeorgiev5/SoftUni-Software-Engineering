@@ -59,9 +59,32 @@ namespace CarShop.Controllers
             data.Users.Add(user);
             data.SaveChanges();
 
-
-
             return Redirect("/Users/Login");
-        } 
+        }
+
+        public HttpResponse Login() => View();
+        
+        [HttpPost]
+        public HttpResponse Login(LoginUserFormModel model)
+        {
+            var hashedPassword =
+                this.passwordHasher.HashPassword(model.Password);
+
+            var userId = this.data
+                .Users
+                .Where(u => u.Username == model.Username && u.Password == hashedPassword)
+                .Select(u => u.Id)
+                .FirstOrDefault();
+
+            if (userId == null)
+            {
+                return Error("Username and password combination is not valid");
+            }
+
+            this.SignIn(userId);
+
+            return Redirect("/Cars/All");
+
+        }
     }
 }

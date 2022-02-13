@@ -7,6 +7,10 @@ namespace CarShop.Services
     {
         public string HashPassword(string password)
         {
+            if (string.IsNullOrWhiteSpace(password))
+            {
+                return string.Empty;
+            }
             using var sha256Hash = SHA256.Create();
 
             byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(password));

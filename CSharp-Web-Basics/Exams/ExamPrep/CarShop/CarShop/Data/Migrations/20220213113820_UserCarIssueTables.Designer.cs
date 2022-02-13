@@ -11,7 +11,7 @@ using System;
 namespace CarShop.Data.Migrations
 {
     [DbContext(typeof(CarShopDbContext))]
-    [Migration("20220209203200_UserCarIssueTables")]
+    [Migration("20220213113820_UserCarIssueTables")]
     partial class UserCarIssueTables
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -83,8 +83,7 @@ namespace CarShop.Data.Migrations
                     b.Property<bool>("IsMechanic");
 
                     b.Property<string>("Password")
-                        .IsRequired()
-                        .HasMaxLength(20);
+                        .IsRequired();
 
                     b.Property<string>("Username")
                         .IsRequired()
