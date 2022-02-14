@@ -12,11 +12,13 @@ namespace CarShop.Controllers
     public class CarsController : Controller
     {
         private readonly IValidator validator;
+        private readonly IUserService userService;
         private readonly CarShopDbContext data;
 
-        public CarsController(IValidator validator, CarShopDbContext data)
+        public CarsController(IValidator validator, IUserService userService, CarShopDbContext data)
         {
             this.validator = validator;
+            this.userService = userService;
             this.data = data;
            
         }
@@ -25,7 +27,7 @@ namespace CarShop.Controllers
         public HttpResponse Add()
         {
             
-            if (this.UserIsMechanic())
+            if (this.userService.IsMechanic(this.User.Id))
             {
                 return Unauthorized();
             }
@@ -36,7 +38,7 @@ namespace CarShop.Controllers
         [Authorize]
         public HttpResponse Add(AddCarFormModel model)
         {
-            if (this.UserIsMechanic())
+            if (this.userService.IsMechanic(this.User.Id))
             {
                 return Unauthorized();
             }
@@ -66,13 +68,22 @@ namespace CarShop.Controllers
         [Authorize]
         public HttpResponse All()
         {
-            List<CarListingViewModel> cars;
+            var carsQuery = this.data.Cars.AsQueryable();
 
-            if (this.UserIsMechanic())
+            if (this.userService.IsMechanic(this.User.Id))
             {
-                cars = this.data
-                    .Cars
-                    .Where(c => c.Issues.Any(i => !i.IsFixed))
+                carsQuery =
+                    carsQuery
+                    .Where(c => c.Issues.Any(i => !i.IsFixed));
+            }
+            else
+            {
+                carsQuery =
+                    carsQuery
+                    .Where(c => c.OwnerId == this.User.Id);
+            }
+            var cars = carsQuery
+
                     .Select(c => new CarListingViewModel
                     { 
                         Id = c.Id,
@@ -84,37 +95,21 @@ namespace CarShop.Controllers
                         RemainingIssues = c.Issues.Where(i => !i.IsFixed).Count()
                     })
                     .ToList();
-               
-            }
-            else
-            {
-                cars = this.data
-                .Cars
-                .Where(c => c.OwnerId == this.User.Id)
-                .Select(c => new CarListingViewModel
-                {
-                    Id = c.Id,
-                    Model = c.Model,
-                    Year = c.Year,
-                    Image = c.PictureUrl,
-                    PlateNumber = c.PlateNumber,
-                    FixedIssues = c.Issues.Where(i => i.IsFixed).Count(),
-                    RemainingIssues = c.Issues.Where(i => !i.IsFixed).Count()
-                })
-                .ToList();
-            }
-            
+
 
             return View(cars);
-            
+
+
         }
 
-        private bool UserIsMechanic()
 
-            => this.data
-                .Users
-                .Any(u => u.Id == this.User.Id && u.IsMechanic);
+
+
+
     }
+
+        
+    
 }
 
             
