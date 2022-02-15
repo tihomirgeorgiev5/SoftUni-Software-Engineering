@@ -1,4 +1,5 @@
-﻿using MyWebServer.Controllers;
+﻿using Git.Models.Users;
+using MyWebServer.Controllers;
 using MyWebServer.Http;
 
 namespace Git.Controllers
@@ -7,5 +8,11 @@ namespace Git.Controllers
     {
         public HttpResponse Register()
             => View();
+
+        [HttpPost]
+        public HttpResponse Register(RegisterUserFormModel model)
+        {
+            return View();
+        }
     }
 }
