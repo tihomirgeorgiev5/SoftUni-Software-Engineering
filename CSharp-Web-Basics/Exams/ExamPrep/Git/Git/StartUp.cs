@@ -14,9 +14,9 @@
                     .MapStaticFiles()
                     .MapControllers())
                 .WithServices(services => services
-                .Add<ApplicationDbContext>()
+                .Add<GitDbContext>()
                 .Add<IViewEngine, CompilationViewEngine>())
-                .WithConfiguration<ApplicationDbContext>(context => context
+                .WithConfiguration<GitDbContext>(context => context
                     .Database.Migrate())
                 .Start();
     }

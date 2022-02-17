@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Git.Data.Migrations
 {
-    [DbContext(typeof(ApplicationDbContext))]
+    [DbContext(typeof(GitDbContext))]
     [Migration("20220214222152_UserRepoCommitTables")]
     partial class UserRepoCommitTables
     {

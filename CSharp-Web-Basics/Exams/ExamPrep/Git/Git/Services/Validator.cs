@@ -20,25 +20,14 @@ namespace Git.Services
                 errors.Add($"Email {model.Email} is not a valid e-mail address");
             }
 
-            if (model.Password.Length < UserMinPassword || model.Password.Length > DefaultMaxLength)
+            if (model.Password.Length < UserMinPassword || model.Password.Length > UserMaxDefaultLength)
             {
-                errors.Add($"Password '{model.Password}'is not valid.It must be between {UserMinPassword} and {DefaultMaxLength} characters long.");
+                errors.Add($"Password '{model.Password}'is not valid.It must be between {UserMinPassword} and {UserMaxDefaultLength} characters long.");
             }
 
-            if (model.UserType != UserTypeMechanic && model.UserType != UserTypeClient)
-            {
-                errors.Add($"User should be either a '{UserTypeMechanic}' and '{UserTypeClient}'");
-            }
+
 
             return errors;
-
-
-
-
-
-
-
-
         }
     }
 }

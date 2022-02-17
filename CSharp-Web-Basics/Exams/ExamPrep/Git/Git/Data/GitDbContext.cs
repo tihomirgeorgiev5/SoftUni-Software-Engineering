@@ -3,7 +3,7 @@
     using Git.Data.Models;
     using Microsoft.EntityFrameworkCore;
 
-    public class ApplicationDbContext : DbContext
+    public class GitDbContext : DbContext
     {
         public DbSet<Commit> Commits { get; init; }
 

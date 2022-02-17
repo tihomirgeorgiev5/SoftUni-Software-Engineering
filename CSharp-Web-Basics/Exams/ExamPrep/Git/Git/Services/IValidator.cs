@@ -8,3 +8,4 @@ namespace Git.Services
         ICollection<string> ValidateUser(RegisterUserFormModel model);
     }
 }
+ 
