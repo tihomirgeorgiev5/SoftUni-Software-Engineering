@@ -79,7 +79,7 @@ namespace Git.Controllers
 
             this.SignIn(userId);
 
-            return Redirect("/Cars/All");
+            return Redirect("/Repositories/All");
 
         }
         public HttpResponse Logout()

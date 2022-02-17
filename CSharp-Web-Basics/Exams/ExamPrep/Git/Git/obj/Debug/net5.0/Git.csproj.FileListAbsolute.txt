@@ -165,3 +165,4 @@ C:\Users\Notebook\Desktop\SoftUni\SoftUni-Software-Engineering\CSharp-Web-Basics
 C:\Users\Notebook\Desktop\SoftUni\SoftUni-Software-Engineering\CSharp-Web-Basics\Exams\ExamPrep\Git\Git\obj\Debug\net5.0\ref\Git.dll
 C:\Users\Notebook\Desktop\SoftUni\SoftUni-Software-Engineering\CSharp-Web-Basics\Exams\ExamPrep\Git\Git\obj\Debug\net5.0\Git.pdb
 C:\Users\Notebook\Desktop\SoftUni\SoftUni-Software-Engineering\CSharp-Web-Basics\Exams\ExamPrep\Git\Git\obj\Debug\net5.0\Git.genruntimeconfig.cache
+C:\Users\Notebook\Desktop\SoftUni\SoftUni-Software-Engineering\CSharp-Web-Basics\Exams\ExamPrep\Git\Git\bin\Debug\net5.0\Views\Error.cshtml

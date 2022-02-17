@@ -6,6 +6,8 @@
     using MyWebServer.Controllers;
     using MyWebServer.Results.Views;
     using Microsoft.EntityFrameworkCore;
+    using Git.Services;
+
     public class Startup
     {
         public static async Task Main()
@@ -15,6 +17,8 @@
                     .MapControllers())
                 .WithServices(services => services
                 .Add<GitDbContext>()
+                .Add<IValidator, Validator>()
+                .Add<IPasswordHasher, PasswordHasher>()
                 .Add<IViewEngine, CompilationViewEngine>())
                 .WithConfiguration<GitDbContext>(context => context
                     .Database.Migrate())
