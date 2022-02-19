@@ -1,19 +1,26 @@
 ﻿using Git.Data;
+using Git.Data.Models;
 using Git.Models.Repositories;
+using Git.Services;
 using MyWebServer.Controllers;
 using MyWebServer.Http;
 using System.Linq;
+using static Git.Data.DataConstants;
 
 namespace Git.Controllers
 {
     public class RepositoriesController : Controller
     {
         private readonly GitDbContext data;
+        private readonly IValidator validator;
 
-        public RepositoriesController(GitDbContext data)
+        public RepositoriesController(GitDbContext data, IValidator validator)
         {
+            this.validator = validator;   
             this.data = data;
         }
+
+        
 
         public HttpResponse All()
         {
@@ -29,6 +36,35 @@ namespace Git.Controllers
                 }).ToList();
 
             return View(repositories);
+        }
+
+        public HttpResponse Create()
+            => View();
+
+        [HttpPost]
+        [Authorize]
+        public HttpResponse Create(CreateRepositoryFormModel model)
+        {
+            var modelErrors = this.validator.ValidateRepository(model);
+
+            if (modelErrors.Any())
+            {
+                return Error(modelErrors);
+            }
+
+            var repository = new Repository
+            {
+                Name = model.Name,
+                IsPublic = model.RepositoryType == RepositoryPublicType,
+                OwnerId = this.User.Id
+            };
+
+            this.data.Repositories.Add(repository);
+
+            this.data.SaveChanges();
+
+            return Redirect("/Repositories/All");
+
         }
     }
 }

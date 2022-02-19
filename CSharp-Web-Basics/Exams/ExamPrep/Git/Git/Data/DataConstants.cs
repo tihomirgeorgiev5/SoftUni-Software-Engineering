@@ -10,6 +10,8 @@
 
         public const int RepoMinName = 3;
         public const int RepoMaxName = 10;
+        public const string RepositoryPrivateType = "Private";
+        public const string RepositoryPublicType = "Public";
 
         public const int CommitMinDescription = 5;
 

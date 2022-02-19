@@ -1,4 +1,5 @@
-﻿using Git.Models.Users;
+﻿using Git.Models.Repositories;
+using Git.Models.Users;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -8,6 +9,8 @@ namespace Git.Services
 {
     public class Validator : IValidator
     {
+       
+
         public ICollection<string> ValidateUser(RegisterUserFormModel model)
         {
             var errors = new List<string>();
@@ -35,6 +38,23 @@ namespace Git.Services
             if (model.Password != model.ConfirmPassword)
             {
                 errors.Add($"Password and its confirmation are different.");
+            }
+
+            return errors;
+        }
+
+        public ICollection<string> ValidateRepository(CreateRepositoryFormModel model)
+        {
+            var errors = new List<string>();
+
+            if (model.Name.Length < RepoMinName || model.Name.Length > RepoMaxName)
+            {
+                errors.Add($"Repository '{model.Name}' is not valid. It must be between {RepoMinName} and {RepoMaxName} characters long");
+            }
+
+            if (model.RepositoryType != RepositoryPrivateType && model.RepositoryType != RepositoryPublicType)
+            {
+                errors.Add($"Repository type can be either '{RepositoryPublicType}' or '{RepositoryPrivateType}'.");
             }
 
             return errors;

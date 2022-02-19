@@ -1,4 +1,5 @@
-﻿using Git.Models.Users;
+﻿using Git.Models.Repositories;
+using Git.Models.Users;
 using System.Collections.Generic;
 
 namespace Git.Services
@@ -6,6 +7,8 @@ namespace Git.Services
     public interface IValidator
     {
         ICollection<string> ValidateUser(RegisterUserFormModel model);
+
+        ICollection<string> ValidateRepository(CreateRepositoryFormModel model);
     }
 }
  
