@@ -1,4 +1,5 @@
 ﻿using Git.Data;
+using Git.Models.Repositories;
 using MyWebServer.Controllers;
 using MyWebServer.Http;
 using System.Linq;
@@ -16,13 +17,18 @@ namespace Git.Controllers
 
         public HttpResponse All()
         {
-            var repositoriesQuery = this.data.Repositories.AsQueryable();
+            var repositories = this.data
+                .Repositories
+                .Where(r => r.IsPublic)
+                .Select(r => new RepositoryListingViewModel {
+                    Id = r.Id,
+                    Name = r.Name,
+                    Owner = r.Owner.Username,
+                    CreatedOn = r.CreatedOn.ToLongTimeString(),
+                    Commits = r.Commits.Count()      
+                }).ToList();
 
-            
-                repositoriesQuery = repositoriesQuery
-                    .Where(r => r.IsPublic);
-           
-            return View();
+            return View(repositories);
         }
     }
 }
