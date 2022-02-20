@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Git.Data.Migrations
 {
     [DbContext(typeof(GitDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    partial class GitDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {

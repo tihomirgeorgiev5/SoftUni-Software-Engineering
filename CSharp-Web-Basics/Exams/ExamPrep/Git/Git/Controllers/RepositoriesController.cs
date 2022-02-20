@@ -24,9 +24,14 @@ namespace Git.Controllers
 
         public HttpResponse All()
         {
+            var user = this.data.Users
+                .Where(u => u.Id == this.User.Id)
+                .Select(u => u.Id)
+                .FirstOrDefault();
+
             var repositories = this.data
                 .Repositories
-                .Where(r => r.IsPublic)
+                .Where(r => r.IsPublic || r.Owner.Id == user )
                 .Select(r => new RepositoryListingViewModel {
                     Id = r.Id,
                     Name = r.Name,
@@ -39,7 +44,7 @@ namespace Git.Controllers
         }
 
         public HttpResponse Create()
-            => View();
+            => this.View();
 
         [HttpPost]
         [Authorize]
