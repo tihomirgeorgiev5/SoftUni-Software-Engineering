@@ -54,7 +54,7 @@ namespace Git.Services
 
             if (model.RepositoryType != RepositoryPrivateType && model.RepositoryType != RepositoryPublicType)
             {
-                errors.Add($"Repository type can be either '{RepositoryPublicType}' or '{RepositoryPrivateType}'.");
+                errors.Add($"Repository type can be either '{RepositoryPublicType}' or '{RepositoryPrivateType}'");
             }
 
             return errors;
