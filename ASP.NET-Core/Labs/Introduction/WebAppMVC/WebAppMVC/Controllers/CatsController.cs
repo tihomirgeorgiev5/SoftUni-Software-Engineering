@@ -6,15 +6,16 @@ namespace WebAppMVC.Controllers
 {
     public class CatsController : Controller
     {
-        public IActionResult All()
-        {
-            var cats = new List<CatViewModel>
-            {
-                new CatViewModel {Name="Pesho", Age = 6 },
-                new CatViewModel {Name="Sara", Age= 10 }
-            };
+        public IEnumerable<CatViewModel> All()
+        
+            => new List<CatViewModel>
+               {
+             new CatViewModel {Name="Pesho", Age = 6 },
+                new CatViewModel { Name = "Sara", Age = 10 }
+               };
+            
 
-            return View(cats);
-        }
+            
+        
     }
 }
