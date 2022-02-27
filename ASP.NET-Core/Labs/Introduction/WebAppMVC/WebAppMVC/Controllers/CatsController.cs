@@ -6,13 +6,19 @@ namespace WebAppMVC.Controllers
 {
     public class CatsController : Controller
     {
-        public IEnumerable<CatViewModel> All()
+        public IActionResult Create() => View();
         
-            => new List<CatViewModel>
-               {
-             new CatViewModel {Name="Pesho", Age = 6 },
-                new CatViewModel { Name = "Sara", Age = 10 }
-               };
+        [HttpPost]
+        public IActionResult Create(CatFormModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            return Ok();
+        } 
+        
             
 
             

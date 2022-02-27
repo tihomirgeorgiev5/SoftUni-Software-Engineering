@@ -437,3 +437,4 @@ C:\Users\Notebook\Desktop\SoftUni\SoftUni-Software-Engineering\ASP.NET-Core\Labs
 C:\Users\Notebook\Desktop\SoftUni\SoftUni-Software-Engineering\ASP.NET-Core\Labs\Introduction\WebAppMVC\WebAppMVC\obj\Debug\net5.0\WebAppMVC.pdb
 C:\Users\Notebook\Desktop\SoftUni\SoftUni-Software-Engineering\ASP.NET-Core\Labs\Introduction\WebAppMVC\WebAppMVC\obj\Debug\net5.0\WebAppMVC.genruntimeconfig.cache
 C:\Users\Notebook\Desktop\SoftUni\SoftUni-Software-Engineering\ASP.NET-Core\Labs\Introduction\WebAppMVC\WebAppMVC\obj\Debug\net5.0\Razor\Views\Cats\All.cshtml.g.cs
+C:\Users\Notebook\Desktop\SoftUni\SoftUni-Software-Engineering\ASP.NET-Core\Labs\Introduction\WebAppMVC\WebAppMVC\obj\Debug\net5.0\Razor\Views\Cats\Create.cshtml.g.cs
