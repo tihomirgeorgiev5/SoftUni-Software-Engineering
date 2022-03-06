@@ -1,9 +1,6 @@
 # Enforce Unix newlines
 * text=auto eol=lf
 
-*.js linguist-detectable=false
-*.css linguist-detectable=false
-
 # Ignores for analysis is used to produce the language stats bar which displays the languages percentages
 plugins/* linguist-vendored=true
 docs/* linguist-vendored=true
