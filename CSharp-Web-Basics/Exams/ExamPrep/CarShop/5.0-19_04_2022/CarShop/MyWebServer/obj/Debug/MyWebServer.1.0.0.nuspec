@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MyWebServer</id>
+    <version>1.0.0</version>
+    <authors>MyWebServer</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net5.0">
+        <dependency id="Microsoft.CodeAnalysis.CSharp" version="3.10.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Notebook\Desktop\SoftUni-C#WebBasics\CarShop\5.0\CarShop\MyWebServer\bin\Debug\net5.0\MyWebServer.dll" target="lib\net5.0\MyWebServer.dll" />
+  </files>
+</package>
