@@ -1,0 +1,12 @@
+Pattern for Migration in Package Manager Console =>
+
+PM> Add-Migration {тук се пишат ентититата}Tables -o Data/Migrations
+// и ако все още не се появява базата => 
+
+PM> update-database
+
+// за изобразяване на командите в базата =>
+
+PM> script-migration {тук се пише съответната миграция,
+                      от която нататъка гледаме командите}
+
