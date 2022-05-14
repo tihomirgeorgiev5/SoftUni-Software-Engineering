@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Serif&display=swap');
 body{
-    background: red;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    max-width: 1300px;
+    margin: 0 auto;  
+}
+
+.navigation p{
+    display: inline-block;
+}
+
+nav{
+    display: inline-block;
+}
+
+li{
+    display: inline-block;
 }
