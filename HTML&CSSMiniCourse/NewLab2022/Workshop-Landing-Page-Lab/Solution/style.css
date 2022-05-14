@@ -54,6 +54,7 @@ a:hover{
 } 
 
 /*site-header*/
+
 .site-header{
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url(../Requirements-and-Resources/Images/kids_main.jpg) no-repeat center;
     background-size: cover;
@@ -83,10 +84,11 @@ a:hover{
 }
 
 /*welcome*/
+
 .welcome{
     color: #5a7c8a;
     width: 60%;
-    margin: 0 auto;
+    margin: 0 auto; 
     padding: 20px 0;
 }
 
@@ -101,5 +103,22 @@ h2{
 .welcome p{
     text-align: center;
 }
+
+/*offerts*/
+
+.offerts{
+    color: white;
+    font-family: 'PT Serif', serif;
+    background: #50b9e1;
+    padding: 20px 30px;
+}
+.offerts img{
+    width: 70px;
+   
+}
+
+
+
+
 
  
