@@ -6,14 +6,19 @@ body{
     max-width: 1300px;
     margin: 0 auto;  
 }
+.navigation{
+    padding: 0 20px;
+}
 
 .navigation p{
     display: inline-block;
     font-size: 22px;
+    width: 700px;
 }
 
 .navigation p span{
     color: #50b9e1;
+    
 }
 nav{
     display: inline-block;
