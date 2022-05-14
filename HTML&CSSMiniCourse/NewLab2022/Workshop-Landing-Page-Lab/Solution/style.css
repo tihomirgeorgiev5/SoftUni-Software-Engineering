@@ -195,6 +195,33 @@ body > main > section.camps > p{
     cursor: pointer;
 }
 
+/*footer*/
+
+footer{
+    background: #50b9e1;
+    color: #5a7c8a;
+    padding: 0 40px 0 80px;
+}
+
+footer p{
+    display: inline-block;
+    width: 88%;
+}
+
+footer ul{
+    display: inline-block;
+}
+
+footer ul a{
+    color: #5a7c8a;
+}
+
+footer ul a i{
+    border: 1px solid #5a7c8a; 
+    border-radius: 50%;
+    padding: 5px;
+}
+
 
 
  
