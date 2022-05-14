@@ -31,7 +31,7 @@ Problems for homework for the [“HTML and CSS Basics”](#) course @ **SoftUni*
 	* **Centered** text
 	* Text color - **#5a7c8a**
 * The second section with title *"Our offerings"*:
-    * List items **display** property - **inline-block** 
+     * List items **display** property - **inline-block** 
 	* Text color - **white**
 	* Font family - **"PT Serif", serif**
 * Third section with title *"Upcoming Camps"*:
