@@ -33,3 +33,17 @@ a{
     text-decoration: none;
     color: black;
 }
+
+nav i{
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+body > header > section.navigation > nav > ul > li:nth-child(5){
+    padding-right: 5px;
+}
+
+ul{
+    padding: 0;
+}
