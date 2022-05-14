@@ -26,6 +26,9 @@ nav{
 
 li{
     display: inline-block;
+}
+
+li:not(:last-child){
     padding-right: 10px;
 }
 
@@ -133,10 +136,11 @@ h2{
     padding: 20px 0;
 }
 
-.camps p:nth-child(2){
+body > main > section.camps > p{
     width: 60%;
     text-align: center;
     margin: 0 auto;
+    padding-bottom: 30px;
 }
 
 .camps img{
@@ -146,6 +150,35 @@ h2{
 
 .camps li{
     width: 400px;
+}
+
+.camps li:not(:last-child){
+    padding-right: 45px;
+}
+.info div{
+    display: inline-block;
+}
+
+.info div p,
+.info div h3{
+    margin: 0;
+    padding: 0;
+}
+
+.info div:nth-child(1){
+    width: 339px;
+}
+
+.info div:nth-child(2){
+    background: #50b9e1;
+    padding: 10px;
+    color: white;
+    font-size: 22px;
+}
+
+.info{
+    border-bottom: 2px solid #5a7c8a;
+    padding-bottom: 10px;
 }
 
 
