@@ -181,6 +181,20 @@ body > main > section.camps > p{
     padding-bottom: 10px;
 }
 
+.more-info button{
+    border: 2px solid #50b9e1;;
+    color: #50b9e1;;
+    background: transparent;
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+.more-info button:hover{
+    background: #50b9e1;
+    color: white;
+    cursor: pointer;
+}
+
 
 
  
