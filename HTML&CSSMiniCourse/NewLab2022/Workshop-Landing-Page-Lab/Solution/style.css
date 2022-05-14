@@ -9,8 +9,12 @@ body{
 
 .navigation p{
     display: inline-block;
+    font-size: 22px;
 }
 
+.navigation p span{
+    color: #50b9e1;
+}
 nav{
     display: inline-block;
 }
