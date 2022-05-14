@@ -127,6 +127,22 @@ h2{
     color: white;
 }
 
+/*camps*/
+.camps{
+    color: #5a7c8a;
+    padding: 20px 0;
+}
+
+.camps p:nth-child(2){
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.camps img{
+    width: 400px;
+    height: 250px;
+}
 
 
 
