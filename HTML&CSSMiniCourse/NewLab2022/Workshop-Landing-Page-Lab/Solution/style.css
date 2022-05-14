@@ -110,7 +110,7 @@ h2{
     color: white;
     font-family: 'PT Serif', serif;
     background: #50b9e1;
-    padding: 20px 30px;
+    padding: 20px 10px;
 }
 
 .offerts img{
@@ -118,8 +118,9 @@ h2{
 }
 
 .offerts li{
-    width: 30%;
-    text-align: center;  
+    width: 28%;
+    text-align: center; 
+    padding: 20px 30px; 
 }
 
 .offerts a{
