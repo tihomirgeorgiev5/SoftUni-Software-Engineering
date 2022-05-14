@@ -112,9 +112,18 @@ h2{
     background: #50b9e1;
     padding: 20px 30px;
 }
+
 .offerts img{
-    width: 70px;
-   
+    width: 70px; 
+}
+
+.offerts li{
+    width: 30%;
+    text-align: center;  
+}
+
+.offerts a{
+    color: white;
 }
 
 
