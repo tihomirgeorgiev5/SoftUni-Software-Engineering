@@ -13,7 +13,7 @@ body{
 .navigation p{
     display: inline-block;
     font-size: 22px;
-    width: 738px;
+    width: 738 px;
 }
 
 .navigation p span{
@@ -80,7 +80,26 @@ a:hover{
     background: #50b9e1;
     border: 2px solid #50b9e1;
     cursor: pointer;
+}
 
+/*welcome*/
+.welcome{
+    color: #5a7c8a;
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+h2{
+    text-align: center;
+    font-family: 'PT Serif', serif;
+    font-size: 32px;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+.welcome p{
+    text-align: center;
 }
 
  
