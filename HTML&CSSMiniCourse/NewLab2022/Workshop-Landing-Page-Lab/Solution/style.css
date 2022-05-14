@@ -47,3 +47,8 @@ body > header > section.navigation > nav > ul > li:nth-child(5){
 ul{
     padding: 0;
 }
+
+a:hover{
+    color: #50b9e1;
+    cursor: pointer;
+}
