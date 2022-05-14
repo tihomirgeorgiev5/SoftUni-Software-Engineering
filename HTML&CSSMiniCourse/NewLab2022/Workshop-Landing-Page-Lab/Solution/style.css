@@ -51,4 +51,36 @@ ul{
 a:hover{
     color: #50b9e1;
     cursor: pointer;
+} 
+
+/*site-header*/
+.site-header{
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url(../Requirements-and-Resources/Images/kids_main.jpg) no-repeat center;
+    background-size: cover;
 }
+
+.site-header h1{
+    font-size: 66px;
+    color:  white;
+    width: 38%;
+    margin: 0;
+    padding: 200px 0 50px 100px;
+}
+
+.site-header button{
+    font-size: 26px;
+    background: transparent;
+    border: 2px white solid;
+    color:  white;
+    padding: 10px 15px;
+    margin: 0 0 100px 100px;
+}
+
+.site-header button:hover{
+    background: #50b9e1;
+    border: 2px solid #50b9e1;
+    cursor: pointer;
+
+}
+
+ 
