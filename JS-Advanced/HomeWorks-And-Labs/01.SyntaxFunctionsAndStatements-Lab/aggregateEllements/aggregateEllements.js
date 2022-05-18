@@ -34,3 +34,5 @@ function aggElements(elements) {
 
 }
 aggElements([2, 4, 8, 16])
+
+console.log();
