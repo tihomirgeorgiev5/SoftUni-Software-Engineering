@@ -1,4 +1,4 @@
-function solve(speed, string) {
+/*function solve(speed, string) {
     let currSpeed = Number(speed);
     let area = string;
     let motorwayLimit = 130;
@@ -56,4 +56,70 @@ function solve(speed, string) {
 
 
 }
-console.log(solve(100, 'motorway'));
+console.log(solve(100, 'motorway'));*/
+
+function speedRadar(speed, area) {
+    let speedLimit;
+    switch (area) {
+        case 'motorway':
+            speedLimit = 130;
+            if (speed <= speedLimit) {
+                console.log(`Driving ${speed} km/h in a ${speedLimit} zone`);
+            } else if (speed > speedLimit && speed <= (speedLimit + 20)) {
+                console.log(`The speed is ${speed - speedLimit} km/h faster than the allowed speed of ${speedLimit} - speeding`);
+            
+            } else if (speed > (speedLimit + 20) && speed <= (speedLimit + 40)) {
+                console.log(`The speed is ${speed - speedLimit} km/h faster than the allowed speed of ${speedLimit} - excessive speeding`);
+
+            } else {
+                console.log(`The speed is ${speed - speedLimit} km/h faster than the allowed speed of ${speedLimit} - reckless driving`);
+            }
+            break;
+        case 'interstate':
+            speedLimit = 90;
+            if (speed <= speedLimit) {
+                console.log(`Driving ${speed} km/h in a ${speedLimit} zone`);
+            } else if (speed > speedLimit && speed <= (speedLimit + 20)) {
+                console.log(`The speed is ${speed - speedLimit} km/h faster than the allowed speed of ${speedLimit} - speeding`);
+            
+            } else if (speed > (speedLimit + 20) && speed <= (speedLimit + 40)) {
+                console.log(`The speed is ${speed - speedLimit} km/h faster than the allowed speed of ${speedLimit} - excessive speeding`);
+
+            } else {
+                console.log(`The speed is ${speed - speedLimit} km/h faster than the allowed speed of ${speedLimit} - reckless driving`);
+            }
+            break;
+        case 'city':
+            speedLimit = 50;
+            if (speed <= speedLimit) {
+                console.log(`Driving ${speed} km/h in a ${speedLimit} zone`);
+            } else if (speed > speedLimit && speed <= (speedLimit + 20)) {
+                console.log(`The speed is ${speed - speedLimit} km/h faster than the allowed speed of ${speedLimit} - speeding`);
+            
+            } else if (speed > (speedLimit + 20) && speed <= (speedLimit + 40)) {
+                console.log(`The speed is ${speed - speedLimit} km/h faster than the allowed speed of ${speedLimit} - excessive speeding`);
+
+            } else {
+                console.log(`The speed is ${speed - speedLimit} km/h faster than the allowed speed of ${speedLimit} - reckless driving`);
+            }
+            break;
+        case 'residential':
+            speedLimit = 20;
+            if (speed <= speedLimit) {
+                console.log(`Driving ${speed} km/h in a ${speedLimit} zone`);
+            } else if (speed > speedLimit && speed <= (speedLimit + 20)) {
+                console.log(`The speed is ${speed - speedLimit} km/h faster than the allowed speed of ${speedLimit} - speeding`);
+            
+            } else if (speed > (speedLimit + 20) && speed <= (speedLimit + 40)) {
+                console.log(`The speed is ${speed - speedLimit} km/h faster than the allowed speed of ${speedLimit} - excessive speeding`);
+
+            } else {
+                console.log(`The speed is ${speed - speedLimit} km/h faster than the allowed speed of ${speedLimit} - reckless driving`);
+            }
+            break;
+        default:
+            break;
+    }
+    
+}
+speedRadar(21, 'residential');
