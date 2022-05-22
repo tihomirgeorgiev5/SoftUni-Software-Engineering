@@ -1,4 +1,4 @@
-function solve(arr){
+/*function solve(arr){
     let newArr = [];
     for (let i = 0; i < arr.length; i++) {
         newArr.push(Number(arr[i]))
@@ -18,4 +18,15 @@ function solve(arr){
 
 
 }
-console.log(solve(['5', '10']))
+console.log(solve(['5', '10']))*/
+
+function sumFirstLast(input) {
+let first = input.shift();
+let last = input.pop();
+
+let result = Number(first) + Number(last);
+
+console.log(result);
+}
+sumFirstLast(['20', '30', '40']);
+sumFirstLast(['5', '10']);
