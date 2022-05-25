@@ -1,4 +1,4 @@
-function solve(arr) {
+/*function solve(arr) {
     let newArr = [];
     let iniNum = 1;
     
@@ -30,4 +30,40 @@ function solve(arr) {
 }
 solve(['remove',
     'remove',
-    'remove'])
+    'remove'])*/
+
+
+function addRemoveEl(arr) {
+    const newArr = [];
+
+    for (let index = 0; index < arr.length; index++) {
+        const element = arr[index];
+        if (element === 'add') {
+            newArr.push(index + 1);
+        } else if (element === 'remove') {
+            newArr.pop();
+        }
+
+    }
+    if (newArr.length === 0) {
+        return 'Empty';
+    } else {
+        return newArr.join('\n');
+    }   
+
+}
+console.log(addRemoveEl(['add',
+    'add',
+    'add',
+    'add']
+));
+console.log('....');
+console.log(addRemoveEl(['add',
+    'add',
+    'remove',
+    'add',
+    'add']));
+    console.log('....');
+console.log(addRemoveEl(['remove',
+    'remove',
+    'remove']));
