@@ -13,7 +13,7 @@
 }
 console.log(solve(['20', '30', '40', '50', '60']));*/
 
-function arrays(input) {
+/*function arrays(input) {
     let newArr = '';
     for (let index = 0; index < input.length; index++) {
         if(index % 2 == 0) {
@@ -24,5 +24,18 @@ function arrays(input) {
     }
     console.log(newArr);
 }
-arrays(['20', '30', '40', '50', '60']);
+arrays(['20', '30', '40', '50', '60']);*/
 
+
+
+function evenPosEl(arr) {
+    let newArr = [];
+    for (let i = 0; i < arr.length; i+=2) {
+        newArr.push(arr[i]);
+        
+    }
+    console.log(newArr.join(' '));
+}
+evenPosEl(['20', '30', '40', '50', '60']);
+console.log('---');
+evenPosEl(['5', '10']);
