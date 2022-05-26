@@ -1,4 +1,4 @@
-function solve(arr){ 
+/*function solve(arr){ 
 
    function sorter(a, b) {
        if (a.length > b.length) {
@@ -27,4 +27,24 @@ solve
     'Theodor', 
     'Jack', 
     'Harrison', 
-    'George'])
+    'George'])*/
+
+    function sortedByCriteria(arr){
+        arr.sort((a, b) => a.length - b.length || a.localeCompare(b));
+console.log(arr.join('\n'));
+    }
+    sortedByCriteria(['alpha', 
+    'beta', 
+    'gamma']);
+    console.log('------');
+    sortedByCriteria(['Isacc', 
+    'Theodor', 
+    'Jack', 
+    'Harrison', 
+    'George']
+    );
+    console.log('------');
+    sortedByCriteria(['test', 
+    'Deny', 
+    'omen', 
+    'Default']);
