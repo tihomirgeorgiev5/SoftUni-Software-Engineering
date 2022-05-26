@@ -1,4 +1,4 @@
-function solve(matrix) {
+/*function solve(matrix) {
     let magicSum = Number.MIN_SAFE_INTEGER;
 
     let isMagicMatrix = true;;
@@ -39,4 +39,32 @@ function solve(matrix) {
 }
 console.log(solve([[4, 5, 6],
 [6, 5, 4],
-[5, 5, 5]]))
+[5, 5, 5]]))*/
+
+function magicMatrices(arr) {
+    let sumRow = arr[0].reduce((a,b) => a + b);
+    for (let index = 0; index < arr[0].length; index++) {
+        let currentColSum = 0;
+        for (let i = 0; i < arr.length; i++) {
+            currentColSum += arr[i][index];  
+        }
+        if (currentColSum !== sumRow) {
+            return false;
+        }
+        
+    }
+    return true;
+
+
+}
+console.log(magicMatrices([[4, 5, 6],
+[6, 5, 4],
+[5, 5, 5]]));
+console.log('----');
+console.log(magicMatrices([[11, 32, 45],
+[21, 0, 1],
+[21, 1, 1]]));
+console.log('----');
+console.log(magicMatrices([[1, 0, 0],
+[0, 0, 1],
+[0, 1, 0]]));
