@@ -1,31 +1,17 @@
 function factory(lib, ord) {
-    //for every order in ord
-    // create object
-    // copy template props
-    // for every element in parts
-    // compose function from library into object
-    // store object
-
-    let result = [];
-
-    for (const order of ord) {
-        Object.assign({}, order.template)
-        const object =  Object.assign({}, order.template);
+    return ord.map(order => {
+        const object = Object.assign({}, order.template);
         const template = order.template;
 
-        const parts =  order.parts;
+        const parts = order.parts;
 
         for (const part of parts) {
             object[part] = lib[part];
-           // console.log(lib[part]); // watch what is in library behind this key
         }
 
-        result.push(object);
-    }
+       return object;
 
-
-    // return result
-    return result;
+    });
 }
 
 const library = {
