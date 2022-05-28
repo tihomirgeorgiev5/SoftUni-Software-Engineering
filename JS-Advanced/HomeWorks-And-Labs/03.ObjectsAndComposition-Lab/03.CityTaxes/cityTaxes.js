@@ -19,14 +19,13 @@ function cityTaxes(name, population, treasury) {
 
 
 }
-const city =
-    cityTaxes('Tortuga',
-        7000,
-        15000);
-city.collectTaxes();
-console.log(city.treasury);
-city.applyGrowth(5);
-console.log(city.population);
+const city = cityTaxes('Tortuga', 7000, 15000);
 
-city.applyRecession(10);
-console.log(city.treasury);
+const asString = JSON.stringify(city);
+
+console.log(asString); // {"name":"Tortuga","population":7000,"treasury":15000,"taxRate":10}
+
+const cityFromString = '{"name":"Tortuga","population":7000,"treasury":15000,"taxRate":10}';
+const parsed = JSON.parse(cityFromString);
+console.log(parsed); // {name: 'Tortuga', population: 7000, treasury: 15000, taxRate: 10}
+console.log(`${parsed.name} => ${parsed.population}`);
