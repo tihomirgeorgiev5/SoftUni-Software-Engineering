@@ -1,18 +1,6 @@
-function factory(lib, ord) {
-    return ord.map(order => {
-        const object = Object.assign({}, order.template);
-        const template = order.template;
+(lib, ord) => ord.map(o => Object.assign({}, o.template,
+     Object.fromEntries(o.parts.map(p => [p, lib[p]]))));
 
-        const parts = order.parts;
-
-        for (const part of parts) {
-            object[part] = lib[part];
-        }
-
-       return object;
-
-    });
-}
 
 const library = {
     print: function () {
