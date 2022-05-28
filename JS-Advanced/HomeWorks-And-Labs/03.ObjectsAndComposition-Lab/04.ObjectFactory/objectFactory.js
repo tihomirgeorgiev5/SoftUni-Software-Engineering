@@ -9,12 +9,9 @@ function factory(lib, ord) {
     let result = [];
 
     for (const order of ord) {
-        const object = {};
+        Object.assign({}, order.template)
+        const object =  Object.assign({}, order.template);
         const template = order.template;
-
-        for (const prop in order.template) {
-            object[prop] = template[prop]; // copy from each template
-        }
 
         const parts =  order.parts;
 
