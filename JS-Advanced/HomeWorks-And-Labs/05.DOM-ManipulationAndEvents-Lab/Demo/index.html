@@ -14,6 +14,7 @@
         function logEventData(event) {
             console.log('clicked');
             console.log(event);
+            btn.removeEventListener('click', logEventData);
 
         }
     </script>
