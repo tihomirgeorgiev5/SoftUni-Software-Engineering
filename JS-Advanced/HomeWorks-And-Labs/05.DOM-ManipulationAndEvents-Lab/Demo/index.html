@@ -4,26 +4,16 @@
     <meta charset="UTF-8"> 
     <title>Manipulation Demo</title>
 </head>
-<button onclick="sort()">Sord List</button>
+
 <body>
-    <ul>
-        <li>7</li>
-        <li>4</li>
-        <li>11</li>
-        <li>12</li>
-        <li>1</li>
-    </ul>
-
+    <button id="btn">Click Me</button>
+    
     <script>
-        function sort() {
-            const ul = document.querySelector('ul');
-            const items = [...ul.children];
-
-            items.sort((a,b) => Number(a.textContent) - Number(b.textContent));
-
-            for (const item of items) {
-                ul.appendChild(item);
-            }
+        const btn = document.getElementById('btn');
+        btn.addEventListener('click', logEventData)
+        function logEventData(event) {
+            console.log('clicked');
+            console.log(event);
 
         }
     </script>
