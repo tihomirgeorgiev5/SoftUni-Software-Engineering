@@ -6,16 +6,15 @@
 </head>
 
 <body>
-    <button id="btn">Click Me</button>
+    <button>0</button>
     
     <script>
-        const btn = document.getElementById('btn');
-        btn.addEventListener('click', logEventData)
-        function logEventData(event) {
-            console.log('clicked');
-            console.log(event);
-            btn.removeEventListener('click', logEventData);
-
+        const btn = document.querySelector('button');
+        btn.addEventListener('click', increment);
+        
+        function increment() {
+            const newValue = Number(btn.textContent) + 1;
+            btn.textContent = newValue;
         }
     </script>
     
