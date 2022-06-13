@@ -1,3 +1,5 @@
+// Take an array as an argument
+
 function isSymmetric(arr) {
     if (!Array.isArray(arr)){
         return false; // Non-arrays are non-symmetric
