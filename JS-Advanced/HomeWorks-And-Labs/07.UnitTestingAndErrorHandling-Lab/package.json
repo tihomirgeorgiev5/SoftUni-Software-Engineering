@@ -1,0 +1,20 @@
+{
+  "name": "symmetry.test.js",
+  "version": "1.0.0",
+  "description": "Short demo of unit testing",
+  "main": "01.subSum.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "testing",
+    "mocha",
+    "chai",
+    "damo"
+  ],
+  "author": "TG",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^4.3.6"
+  }
+}
