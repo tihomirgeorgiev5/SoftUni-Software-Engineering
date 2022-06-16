@@ -21,6 +21,13 @@ describe('lookupchar function tests', () => {
         expect(lookupChar('abc', -1)).to.equal('Incorrect index');
     });
 
+    // ⦁	Returning an "Incorrect index"
+    it('empty string as input', () => {
+        expect(lookupChar('', 0)).to.equal('Incorrect index');
+    });
+
+
+
     // ⦁	Returning undefined
     it('incorrect string parameter', () => {
         expect(lookupChar(10,4)).to.be.undefined;
