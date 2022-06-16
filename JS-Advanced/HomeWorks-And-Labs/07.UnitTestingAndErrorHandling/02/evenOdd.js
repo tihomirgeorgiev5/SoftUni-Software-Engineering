@@ -1,13 +1,13 @@
-function isOddOrEven(string) {
-    if (typeof(string) !== 'string') {
-        return undefined;
-    }
-    if (string.length % 2 === 0) {
-        return "even";
-    }
+// Take an array as an argument
 
-    return "odd";
+function isSymmetric(arr) {
+    if (!Array.isArray(arr)){
+        return false; // Non-arrays are non-symmetric
+    }
+    let reversed = arr.slice(0).reverse(); // Clone and reverse
+    let equal = (JSON.stringify(arr) == JSON.stringify(reversed));
+    return equal;
 }
 
 
-module.export = isOddOrEven ;
+module.export = {isSymmetric};
