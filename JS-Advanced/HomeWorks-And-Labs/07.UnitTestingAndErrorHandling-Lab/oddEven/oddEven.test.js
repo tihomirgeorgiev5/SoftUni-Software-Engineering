@@ -21,10 +21,16 @@ describe('isOddOrEven function test', () => {
     it('should return undefined if parameter is number', () => {
         expect(isOddOrEven(10)).to.be.undefined;
     });
-    // it('should return undefined if parameter is number', ()=> {
-    //     expect(isOddOrEven(10)).to.be.undefined;
-    // });
-    // it('should return undefined if parameter is number', ()=> {
-    //     expect(isOddOrEven(10)).to.be.undefined;
-    // });
+
+    it('should return undefined if parameter is undefined', ()=> {
+        expect(isOddOrEven(undefined)).to.be.undefined;
+    });
+
+    it('should return undefined if parameter is object', ()=> {
+        expect(isOddOrEven({})).to.be.undefined;
+    });
+
+    it('should return undefined if parameter is array', ()=> {
+        expect(isOddOrEven([])).to.be.undefined;
+    });
 });
