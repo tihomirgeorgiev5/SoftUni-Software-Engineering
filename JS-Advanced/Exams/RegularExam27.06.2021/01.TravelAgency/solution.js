@@ -89,25 +89,107 @@ window.addEventListener('load', solution);
 function solution() {
   // first get buttons
 
-  const submitBtn = document.getElementById('submitBTN');
-  const fullNameField = document.getElementById('fname');
-  const emailfield = document.getElementById('email');
-  const phoneNumberField = document.getElementById('phone');
-  const addressField = document.getElementById('address');
-  const postCodeField = document.getElementById('code');
-  const editBtn = document.getElementById('editBTN');
-  const contBtn = document.getElementById('continueBTN');
+  let submitBtn = document.getElementById('submitBTN');
+  let fullNameField = document.getElementById('fname');
+  let emailfield = document.getElementById('email');
+  let phoneNumberField = document.getElementById('phone');
+  let addressField = document.getElementById('address');
+  let postCodeField = document.getElementById('code');
+
+
 
   submitBtn.addEventListener('click', onSubmit);
 
+
   function onSubmit(e) {
+    e.preventDefault();
+
+
     let fullName = fullNameField.value;
     let email = emailfield.value;
     let phoneNum = phoneNumberField.value;
     let address = addressField.value;
     let postalCode = postCodeField.value;
-     
+
+    if (!fullName || !email) {
+      return;
+    }
+
+    let editBtn = document.getElementById('editBTN');
+    let contBtn = document.getElementById('continueBTN');
+
+    submitBtn.disabled = true;
+    editBtn.disabled = false;
+    contBtn.disabled = false;
 
 
-  }
+
+    // let classPreview = document.querySelector('.preview');
+    let infoPreview = document.getElementById('infoPreview');
+    let fullNameLi = document.createElement('li');
+    let emailLi = document.createElement('li');
+    let phoneNumLi = document.createElement('li');
+    let addressLi = document.createElement('li');
+    let postalCodeLi = document.createElement('li');
+
+    fullNameLi.textContent = `Full Name: ${fullName}`;
+    emailLi.textContent = `Email: ${email}`;
+    phoneNumLi.textContent = `Phone Number: ${phoneNum}`;
+    addressLi.textContent = `Address: ${address}`;
+    postalCodeLi.textContent = `Postal Code: ${postalCode}`;
+
+    infoPreview.appendChild(fullNameLi);
+    infoPreview.appendChild(emailLi);
+    infoPreview.appendChild(phoneNumLi);
+    infoPreview.appendChild(addressLi);
+    infoPreview.appendChild(postalCodeLi);
+
+    // classPreview.appendChild(infoPreview);
+
+    fullName = '';
+    email = '';
+    phoneNum = '';
+    address = '';
+    postalCode = '';
+
+
+    editBtn.addEventListener('click', onEdit);
+
+    function onEdit(e) {
+      e.preventDefault();
+
+      while (infoPreview.firstChild) {
+        infoPreview.removeChild(infoPreview.firstChild);
+      }
+
+      fullName = fullNameLi.textContent;
+      email = emailLi.textContent;
+      phoneNum = Number(phoneNumLi.textContent);
+      address = addressLi.textContent;
+      postalCode = Number(postalCodeLi.textContent);
+
+      submitBtn.disabled = false;
+      editBtn.disabled = true;
+      contBtn.disabled = true;
+
+    };
+    contBtn.addEventListener('click', onContinue);
+    function onContinue(e) {
+      e.preventDefault();
+
+      let blockDiv = document.getElementById('block');
+
+      while (blockDiv.firstChild) {
+        blockDiv.removeChild(blockDiv.firstChild);
+      }
+      let h3Element = document.createElement('h3');
+      h3Element.textContent = 'Thank you for your reservation!';
+
+      blockDiv.appendChild(h3Element);
+
+    };
+
+
+  };
+
 }
