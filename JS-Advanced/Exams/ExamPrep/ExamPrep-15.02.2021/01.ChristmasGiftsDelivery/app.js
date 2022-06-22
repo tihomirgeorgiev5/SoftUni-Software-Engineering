@@ -1,3 +1,3 @@
 function solution() {
-    //TO DO
+    console.log('todo');
 }
