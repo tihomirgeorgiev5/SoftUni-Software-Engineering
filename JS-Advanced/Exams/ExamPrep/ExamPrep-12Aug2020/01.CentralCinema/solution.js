@@ -52,7 +52,7 @@ function solve() {
             const clearBtn = document.querySelector('#archive > button');
             clearBtn.addEventListener('click', onClear);
 
-            function onclear(e) {
+            function onClear(e) {
                 const ul = e.target.parentNode.querySelector('ul');
                 while (ul.firstChild) {
                     ul.removeChild(ul.firstChild);
@@ -66,7 +66,7 @@ function solve() {
     }
 
     function isValid(name, hall, ticketPrice) {
-        if (name == '' || hall == '' || ticketprice == '' || isNaN(ticketPrice)) {
+        if (name == '' || hall == '' || ticketPrice == '' || isNaN(ticketPrice)) {
             return false;
         }
         return true;
