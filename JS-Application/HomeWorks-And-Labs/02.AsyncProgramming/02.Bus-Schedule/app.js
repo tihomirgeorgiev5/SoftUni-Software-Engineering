@@ -15,14 +15,20 @@
         // display next stop
 
         departBtn.disabled = true;
-        arriveBtn.disabled = false; 
+         
 
         const url = `http://localhost:3030/jsonstore/bus/schedule/${stop.next}`;
         const res = await fetch(url);
+        if (res.status != 200) {
+            label.textContent = 'Error!';
+            departBtn.disabled = true;
+            arriveBtn.disabled = true; 
+            alert('Wrong data!');
+        }
 
         stop = await res.json();
-
         label.textContent = `Next stop ${stop.name}`;
+        arriveBtn.disabled = false;
     }
 
     function arrive() {
