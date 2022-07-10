@@ -9,29 +9,15 @@
 </head>
 
 <body>
-    <script>
-        const input = {
-            'body': 'Quisquam beatae rerum repudiandae distinctio nesciunt nemo dolorem facilis aspernatur, totam, laudantium sunt amet non, itaque voluptate quae cumque tempore autem similique. Quisquam nemo cupiditate, facere obcaecati iure eveniet illo recusandae! Pariatur magnam commodi, doloremque, beatae unde facilis soluta blanditiis ex debitis quisquam, nostrum voluptates.',
-            'title': 'Second Title'
-        };
+    <ul id="list">
 
-        async function solve() {
-            const url = 'http://localhost:3030/jsonstore/blog/posts';
-            const res = await fetch(url, {
-                method: 'post',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(input)
-            });
-
-            const data = await res.json();
-
-            console.log(data);
-        }
-
-        solve();
-    </script>
+    </ul>
+    <div>
+        <input type="text" id="product">
+        <button id="createBtn">Create</button>
+        <button id="refreshBtn">Refresh</button>
+    </div>
+    <script src="app.js"></script>
 </body>
 
 </html>
