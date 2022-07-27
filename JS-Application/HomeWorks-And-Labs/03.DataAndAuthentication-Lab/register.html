@@ -1,0 +1,121 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form>* {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" name="token" id="token"><button>Make Authorized Request</button>
+    <h2>Register</h2>
+    <form id="register">
+        <input type="text" name="email">
+        <input type="password" name="password">
+        <input type="password" name="repass">
+        <input type="submit" value="Register">
+    </form>
+
+    <h2>Login</h2>
+    <form id="login">
+        <input type="text" name="email">
+        <input type="password" name="password">
+        <input type="submit" value="Login">
+    </form>
+
+    <script>
+        document.querySelector('button').addEventListener('click', async () => {
+            const token = document.getElementById('token').value;
+
+            const res = await fetch(urlRecipes, {
+                headers: {
+                    'X-Authorization': token
+                }
+                
+            });
+
+            const data = await res.json();
+            console.log(data);
+
+        });
+        document.getElementById('register').addEventListener('submit', onRegister);
+        document.getElementById('login').addEventListener('submit', onLogin);
+        const urlReg = `http://localhost:3030/users/register`;
+        const urlLog = `http://localhost:3030/users/login`;
+        const urlRecipes = `http://localhost:3030/data/recipes`;
+
+        async function onRegister(ev) {
+            ev.preventDefault();
+
+            const formData = new FormData(ev.target);
+
+            const data = {
+                email: formData.get('email'),
+                password: formData.get('password'),
+            }
+            try {
+                if (formData.get('password') != formData.get('repass')) {
+                    throw new Error('Passwords don\'t match!');
+                }
+                const res = await fetch(urlReg, {
+                    method: 'post',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                if (res.ok == false) {
+                    const error = await res.json();
+                    throw new Error(error.message);
+                }
+                const resData = await res.json();
+
+                console.log(resData);
+            } catch (error) {
+                alert(error.message);
+
+            }
+
+        }
+        async function onLogin(ev) {
+            ev.preventDefault();
+
+            const formData = new FormData(ev.target);
+            const data = {
+                email: formData.get('email'),
+                password: formData.get('password')
+            }
+
+            try {
+                const res = await fetch(urlLog, {
+                    method: 'post',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                if (res.ok == false) {
+                    const error = await res.json();
+                    throw Error(error.message)
+                }
+
+                const resData = await res.json();
+                console.log(resData);
+                
+            } catch (error) {
+                alert(error.message);
+            }
+        }
+    </script>
+
+</body>
+
+</html>
