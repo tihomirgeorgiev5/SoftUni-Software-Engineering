@@ -8,7 +8,7 @@ async function students() {
         const firstName = s.firstName;
         const lastName = s.lastName;
         const facultyNumber = s.facultyNumber;
-        const grade = Number(s.grade);
+        const grade = s.grade;
 
         const tr = document.createElement('tr');
 
@@ -56,8 +56,8 @@ async function students() {
                 body: JSON.stringify({
                     firstName: firstNameInput.value,
                     lastName: lastNameInput.value,
-                    facultyNumber: Number(facultyNumInput.value),
-                    grade: Number(gradeInput.value)
+                    facultyNumber: facultyNumInput.value,
+                    grade: gradeInput.value
                 })
 
             });
