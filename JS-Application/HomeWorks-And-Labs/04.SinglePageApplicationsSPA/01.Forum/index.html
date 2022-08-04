@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3cd69e2433.js" crossorigin="anonymous"></script>
     <title>SoftUni Forum</title>
+    <script src="/src/app.js" type="module"></script>
 </head>
 
 <body>
@@ -25,11 +26,13 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#">Home</a>
+                    <a href="/" id="homeLink">Home</a>
                 </li>
             </ul>
         </nav>
     </header>
+
+    <main id="main"></main>
 
     <section id="homeView">
 
@@ -54,8 +57,8 @@
                         <textarea type="text" name="postText" id="postText" rows="8" class="height"></textarea>
                     </div>
                     <div class="new-topic-buttons">
-                        <button class="cancel">Cancel</button>
-                        <button class="public">Post</button>
+                        <button type="button" name="cancel" class="cancel">Cancel</button>
+                        <button name="submit" class="public">Post</button>
                     </div>
 
                 </form>
@@ -67,7 +70,25 @@
                 <div class="topic-container">
                     <div class="topic-name-wrapper">
                         <div class="topic-name">
-                            <a href="#" class="normal">
+                            <a href="/details" class="normal">
+                                <h2>Angular 10</h2>
+                            </a>
+                            <div class="columns">
+                                <div>
+                                    <p>Date: <time>2020-10-10T12:08:28.451Z</time></p>
+                                    <div class="nick-name">
+                                        <p>Username: <span>David</span></p>
+                                    </div>
+                                </div>
+                
+                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="topic-name-wrapper">
+                        <div class="topic-name">
+                            <a href="/details" class="normal">
                                 <h2>Angular 10</h2>
                             </a>
                             <div class="columns">
@@ -85,26 +106,7 @@
                     
                 </div>
 
-                <div class="topic-container">
-                    <div class="topic-name-wrapper">
-                        <div class="topic-name">
-                            <a href="#" class="normal">
-                                <h2>Angular 10</h2>
-                            </a>
-                            <div class="columns">
-                                <div>
-                                    <p>Date: <time>2020-10-10T12:08:28.451Z</time></p>
-                                    <div class="nick-name">
-                                        <p>Username: <span>David</span></p>
-                                    </div>
-                                </div>
                 
-                
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
             </div>
 
         </main>
