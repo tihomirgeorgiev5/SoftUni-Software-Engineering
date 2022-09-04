@@ -1,0 +1,5 @@
+C# Web Basics course lays the foundation of important principles and instruments used in web development, such as HTTP Protocol, Cookies and Sessions in general and especially in ASP.NET Core web-development framework.
+
+For better understanding of these principles we'll write our own server and our own MVC Framework with support for all the basic functionalities required for a modern web application.
+
+With the gathered knowledge we'll create our own web application with C# and MS SQL Server with separation of Models, Views and Controllers (MVC).
