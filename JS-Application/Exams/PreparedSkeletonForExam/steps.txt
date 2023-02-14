@@ -1,0 +1,15 @@
+1. Extract and examine project files
+2. Setup NPM project (project.json + libraries)
+2.1. in package.json => Terminal=> write npm i
+2.2. in package.json => Terminal=> write npm start (start server on 3000)
+2.3. start server.js => Terminal=> cd server => node server.js (start server on 3030)
+2.4. start app.js in index.html => <script src="/src/app.js" type="module"></script>
+3. Analyze HTML and determine template structure
+4. Create application entry module
+5. Setup routing and create view placeholders
+6. Implement request functions
+7. Implement views
+7.1. Create static template
+7.2. Implement requests
+7.3. Populate template with remote data
+7.4. Add event listeners (if any)
