@@ -12,7 +12,7 @@ total_price_for_movie = total_clothes_price + decor
 
 left_money = abs(total_price_for_movie - budget)
 
-if left_money >= budget:
+if total_price_for_movie > budget:
     print("Not enough money!")
     print(f"Wingard needs {left_money:.2f} leva more.")
 else:
