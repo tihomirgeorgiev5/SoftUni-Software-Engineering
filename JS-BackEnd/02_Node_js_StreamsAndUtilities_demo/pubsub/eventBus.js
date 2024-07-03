@@ -5,6 +5,10 @@ exports.subscribe = (eventType, callback) => {
         subscribers[eventType]=[];
     }
     subscribers[eventType].push(callback);
+
+    return () => {
+        subscribers[eventType] = subscribers[eventType].filter(x => x != callback);
+    }
 };
 
 exports.publish = (eventType, ...params) => {
