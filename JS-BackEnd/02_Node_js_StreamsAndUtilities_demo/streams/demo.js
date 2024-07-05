@@ -14,3 +14,5 @@ readStream.on('end', () => {
 writeStream.write('Hello World');
 writeStream.write('\n');
 writeStream.write('Hello World 2');
+
+writeStream.end();
